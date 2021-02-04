@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, D:/Quartus/work/tutorials/tutorial4/Tutorial4.bdf
+source_file = 1, D:/Quartus/work/tutorials/tutorial4/Waveformt4.vwf
+source_file = 1, D:/Quartus/work/tutorials/tutorial4/db/Tutorial4.cbx.xml
+design_name = Tutorial4
+instance = comp, \O~output , O~output, Tutorial4, 1
+instance = comp, \A~input , A~input, Tutorial4, 1
+instance = comp, \C~input , C~input, Tutorial4, 1
+instance = comp, \B~input , B~input, Tutorial4, 1
+instance = comp, \inst2~0 , inst2~0, Tutorial4, 1

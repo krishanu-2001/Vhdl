@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Quartus/work/tutorials/tutorial3/Ripple_Adder/simulation/qsim
+vRipple_Adder
+Z1 !s110 1612419656
+!i10b 1
+!s100 f[IC=l3FI2>mQ?b7b7OeP0
+In=UE`z]DjT7;gXIGbefMY2
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1612419655
+8Ripple_Adder.vo
+FRipple_Adder.vo
+L0 32
+Z3 OV;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1612419656.556000
+!s107 Ripple_Adder.vo|
+!s90 -work|work|Ripple_Adder.vo|
+!i113 1
+Z4 o-work work
+n@ripple_@adder
+vRipple_Adder_vlg_check_tst
+R1
+!i10b 1
+!s100 8JU_WakK1k^c89?27:XJ33
+IbU18n;=6M4ao?f^0@>Hcj1
+R2
+R0
+Z5 w1612419654
+Z6 8WaveformRippleAdder.vwf.vt
+Z7 FWaveformRippleAdder.vwf.vt
+L0 62
+R3
+r1
+!s85 0
+31
+Z8 !s108 1612419656.605000
+Z9 !s107 WaveformRippleAdder.vwf.vt|
+Z10 !s90 -work|work|WaveformRippleAdder.vwf.vt|
+!i113 1
+R4
+n@ripple_@adder_vlg_check_tst
+vRipple_Adder_vlg_sample_tst
+R1
+!i10b 1
+!s100 o6cN>i[a1[554776CWPR_0
+I<knR]OFnC^6:VGDVfg>[[1
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@ripple_@adder_vlg_sample_tst
+vRipple_Adder_vlg_vec_tst
+R1
+!i10b 1
+!s100 ]441ngX^XW:Gzo6@VOYZj0
+IOO<H]MAN`M^N@iC;l2fKS2
+R2
+R0
+R5
+R6
+R7
+L0 237
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@ripple_@adder_vlg_vec_tst
