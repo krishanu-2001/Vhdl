@@ -1,0 +1,35 @@
+# do Half_Adder.do
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 09:14:27 on Feb 11,2021
+# vlog -work work Half_Adder.vo 
+# -- Compiling module Half_Adder
+# 
+# Top level modules:
+# 	Half_Adder
+# End time: 09:14:27 on Feb 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 09:14:27 on Feb 11,2021
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module Half_Adder_vlg_sample_tst
+# -- Compiling module Half_Adder_vlg_check_tst
+# -- Compiling module Half_Adder_vlg_vec_tst
+# 
+# Top level modules:
+# 	Half_Adder_vlg_vec_tst
+# End time: 09:14:27 on Feb 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "Half_Adder.do" 
+# Start time: 09:14:27 on Feb 11,2021
+# Loading work.Half_Adder_vlg_vec_tst
+# Loading work.Half_Adder
+# Loading arriaii_ver.arriaii_io_obuf
+# Loading arriaii_ver.arriaii_io_ibuf
+# Loading arriaii_ver.arriaii_lcell_comb
+# Loading work.Half_Adder_vlg_sample_tst
+# Loading work.Half_Adder_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(178)
+#    Time: 1 us  Iteration: 0  Instance: /Half_Adder_vlg_vec_tst/tb_out
+# End time: 09:14:27 on Feb 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
