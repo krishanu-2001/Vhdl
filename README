@@ -1,0 +1,4 @@
+Run Quartus
+Open file and synthesize
+Set as Top level entity
+ensure each entity has different name
