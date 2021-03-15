@@ -1,0 +1,15 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+entity OR is
+Port(A: in STD_LOGIC;
+	  B: in STD_LOGIC;
+	  S: out STd_LOGIC);
+end OR;
+
+architecture structural of OR is
+
+begin
+
+	S <= A OR B;
+	
+end structural;

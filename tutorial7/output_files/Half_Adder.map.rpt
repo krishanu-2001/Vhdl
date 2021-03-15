@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Half_Adder
-Thu Feb 11 09:55:01 2021
+Fri Feb 12 09:11:54 2021
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -43,10 +43,10 @@ agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +-----------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status       ; Successful - Thu Feb 11 09:55:01 2021      ;
+; Analysis & Synthesis Status       ; Successful - Fri Feb 12 09:11:54 2021      ;
 ; Quartus II 64-Bit Version         ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                     ; Half_Adder                                 ;
-; Top-level Entity Name             ; Half_Adder1                                ;
+; Top-level Entity Name             ; HA                                         ;
 ; Family                            ; Arria II GX                                ;
 ; Logic utilization                 ; N/A                                        ;
 ;     Combinational ALUTs           ; 2                                          ;
@@ -71,7 +71,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                           ; Half_Adder1        ; Half_Adder         ;
+; Top-level entity name                                                           ; HA                 ; Half_Adder         ;
 ; Family name                                                                     ; Arria II GX        ; Cyclone IV GX      ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
@@ -164,13 +164,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                               ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                        ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------+---------+
-; Half_Adder1.vhd                  ; yes             ; User VHDL File  ; D:/Quartus/work/tutorials/tutorial7/Half_Adder1.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                      ;
++----------------------------------+-----------------+-----------------+--------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path               ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------+---------+
+; HA.vhd                           ; yes             ; User VHDL File  ; D:/Quartus/work/tutorials/tutorial7/HA.vhd ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -226,7 +226,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 12x12 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+---------------------+--------------+
-; |Half_Adder1               ; 2 (2)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 4    ; 0            ; |Half_Adder1        ; work         ;
+; |HA                        ; 2 (2)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 4    ; 0            ; |HA                 ; work         ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -276,18 +276,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Thu Feb 11 09:54:53 2021
+    Info: Processing started: Fri Feb 12 09:11:45 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Half_Adder -c Half_Adder
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file half_adder1.vhd
-    Info (12022): Found design unit 1: Half_Adder1-dataflow
-    Info (12023): Found entity 1: Half_Adder1
-Info (12021): Found 2 design units, including 1 entities, in source file half_adder.vhd
-    Info (12022): Found design unit 1: HA-dataflow
-    Info (12023): Found entity 1: HA
 Info (12021): Found 1 design units, including 1 entities, in source file half_adder.bdf
     Info (12023): Found entity 1: Half_Adder
-Info (12127): Elaborating entity "Half_Adder1" for the top level hierarchy
+Info (12021): Found 2 design units, including 1 entities, in source file ha.vhd
+    Info (12022): Found design unit 1: HA-dataflow
+    Info (12023): Found entity 1: HA
+Info (12127): Elaborating entity "HA" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -296,9 +293,9 @@ Info (21057): Implemented 6 device resources after synthesis - the final resourc
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 2 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4850 megabytes
-    Info: Processing ended: Thu Feb 11 09:55:01 2021
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Peak virtual memory: 4846 megabytes
+    Info: Processing ended: Fri Feb 12 09:11:54 2021
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:20
 
 

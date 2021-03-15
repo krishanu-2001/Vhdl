@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 14.1.0 Build 186 12/03/2014 SJ Web Edition"
 
--- DATE "02/11/2021 09:55:20"
+-- DATE "02/12/2021 09:12:13"
 
 -- 
 -- Device: Altera EP2AGX45CU17I3 Package UFBGA358
@@ -32,14 +32,14 @@ LIBRARY IEEE;
 USE ARRIAII.ARRIAII_COMPONENTS.ALL;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-ENTITY 	Half_Adder1 IS
+ENTITY 	HA IS
     PORT (
 	X : IN std_logic;
 	Y : IN std_logic;
-	S : BUFFER std_logic;
-	C : BUFFER std_logic
+	S : OUT std_logic;
+	C : OUT std_logic
 	);
-END Half_Adder1;
+END HA;
 
 -- Design Ports Information
 -- S	=>  Location: PIN_V7,	 I/O Standard: 2.5 V,	 Current Strength: Default
@@ -48,7 +48,7 @@ END Half_Adder1;
 -- Y	=>  Location: PIN_U7,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
-ARCHITECTURE structure OF Half_Adder1 IS
+ARCHITECTURE structure OF HA IS
 SIGNAL gnd : std_logic := '0';
 SIGNAL vcc : std_logic := '1';
 SIGNAL unknown : std_logic := 'X';

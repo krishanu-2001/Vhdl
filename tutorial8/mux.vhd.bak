@@ -1,0 +1,8 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity mux_4to1 is
+port(
+A,B,C,D,S0,S1: in STD_LOGIC;
+ZL out STD_LOGIC);
+end mux_4to1;

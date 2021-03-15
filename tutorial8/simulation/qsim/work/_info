@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Quartus/work/tutorials/tutorial8/simulation/qsim
+vFull_Adder
+Z1 !s110 1613707636
+!i10b 1
+!s100 05dXj^;QGk0C26=XoRRC72
+IETBjM]=Jl6`HoABBUU6I31
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1613707635
+8Full_Adder.vo
+FFull_Adder.vo
+L0 32
+Z3 OV;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1613707636.219000
+!s107 Full_Adder.vo|
+!s90 -work|work|Full_Adder.vo|
+!i113 1
+Z4 o-work work
+n@full_@adder
+vFull_Adder_vlg_check_tst
+R1
+!i10b 1
+!s100 fMnYSc7R^[R9nfQz31DTe3
+I?;Wh[nnjIVX0zzoJD8H7:1
+R2
+R0
+Z5 w1613707633
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 62
+R3
+r1
+!s85 0
+31
+Z8 !s108 1613707636.278000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+n@full_@adder_vlg_check_tst
+vFull_Adder_vlg_sample_tst
+R1
+!i10b 1
+!s100 0V=ghhcXj>[l]f]an3bRD3
+IidX0K9g4oU1CdPYLP3N>L0
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@full_@adder_vlg_sample_tst
+vFull_Adder_vlg_vec_tst
+R1
+!i10b 1
+!s100 jYi4E:Rj_QXEmn8zCg`3^3
+I9K19i[oHHlzN471BJoPhk1
+R2
+R0
+R5
+R6
+R7
+L0 184
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@full_@adder_vlg_vec_tst

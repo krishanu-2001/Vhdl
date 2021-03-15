@@ -1,0 +1,16 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+-- define entity
+entity decoder3_8 is
+Port(C,B,A: in STD_LOGIC; 
+	  I: out STD_LOGIC_VECTOR(7downto0));
+end decoder3_8;
+
+--behavioural architecture
+architecture bhv of decoder3_8 is
+begin
+begin process(C,B,A)
+	variable good <= A + 2*B + 4*C;
+	I(good)
+end process
+end bhv

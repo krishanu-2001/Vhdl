@@ -1,0 +1,32 @@
+|Full_Adder
+A => HA:HA1.A_ha
+B => HA:HA1.B_ha
+Cin => HA:HA2.B_ha
+S << HA:HA2.S_ha
+Cout << OR_Gate:OR1.C_or
+
+
+|Full_Adder|HA:HA1
+A_ha => S_ha.IN0
+A_ha => C_ha.IN0
+B_ha => S_ha.IN1
+B_ha => C_ha.IN1
+S_ha <= S_ha.DB_MAX_OUTPUT_PORT_TYPE
+C_ha <= C_ha.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Full_Adder|HA:HA2
+A_ha => S_ha.IN0
+A_ha => C_ha.IN0
+B_ha => S_ha.IN1
+B_ha => C_ha.IN1
+S_ha <= S_ha.DB_MAX_OUTPUT_PORT_TYPE
+C_ha <= C_ha.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Full_Adder|OR_Gate:OR1
+A_or => C_or.IN0
+B_or => C_or.IN1
+C_or <= C_or.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,165 @@
+// Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 14.1.0 Build 186 12/03/2014 SJ Web Edition"
+
+// DATE "02/19/2021 09:37:15"
+
+// 
+// Device: Altera EP2AGX45CU17I3 Package UFBGA358
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Full_Adder (
+	A,
+	B,
+	Cin,
+	S,
+	Cout);
+input 	A;
+input 	B;
+input 	Cin;
+output 	S;
+output 	Cout;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \S~output_o ;
+wire \Cout~output_o ;
+wire \A~input_o ;
+wire \B~input_o ;
+wire \Cin~input_o ;
+wire \HA2|S_ha~combout ;
+wire \OR1|C_or~0_combout ;
+
+
+arriaii_io_obuf \S~output (
+	.i(\HA2|S_ha~combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\S~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \S~output .bus_hold = "false";
+defparam \S~output .open_drain_output = "false";
+// synopsys translate_on
+
+arriaii_io_obuf \Cout~output (
+	.i(\OR1|C_or~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Cout~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Cout~output .bus_hold = "false";
+defparam \Cout~output .open_drain_output = "false";
+// synopsys translate_on
+
+arriaii_io_ibuf \A~input (
+	.i(A),
+	.ibar(gnd),
+	.o(\A~input_o ));
+// synopsys translate_off
+defparam \A~input .bus_hold = "false";
+defparam \A~input .simulate_z_as = "z";
+// synopsys translate_on
+
+arriaii_io_ibuf \B~input (
+	.i(B),
+	.ibar(gnd),
+	.o(\B~input_o ));
+// synopsys translate_off
+defparam \B~input .bus_hold = "false";
+defparam \B~input .simulate_z_as = "z";
+// synopsys translate_on
+
+arriaii_io_ibuf \Cin~input (
+	.i(Cin),
+	.ibar(gnd),
+	.o(\Cin~input_o ));
+// synopsys translate_off
+defparam \Cin~input .bus_hold = "false";
+defparam \Cin~input .simulate_z_as = "z";
+// synopsys translate_on
+
+arriaii_lcell_comb \HA2|S_ha (
+// Equation(s):
+// \HA2|S_ha~combout  = !\A~input_o  $ (!\B~input_o  $ (\Cin~input_o ))
+
+	.dataa(!\A~input_o ),
+	.datab(!\B~input_o ),
+	.datac(!\Cin~input_o ),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\HA2|S_ha~combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \HA2|S_ha .extended_lut = "off";
+defparam \HA2|S_ha .lut_mask = 64'h6969696969696969;
+defparam \HA2|S_ha .shared_arith = "off";
+// synopsys translate_on
+
+arriaii_lcell_comb \OR1|C_or~0 (
+// Equation(s):
+// \OR1|C_or~0_combout  = (!\A~input_o  & (\B~input_o  & \Cin~input_o )) # (\A~input_o  & ((\Cin~input_o ) # (\B~input_o )))
+
+	.dataa(!\A~input_o ),
+	.datab(!\B~input_o ),
+	.datac(!\Cin~input_o ),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\OR1|C_or~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \OR1|C_or~0 .extended_lut = "off";
+defparam \OR1|C_or~0 .lut_mask = 64'h1717171717171717;
+defparam \OR1|C_or~0 .shared_arith = "off";
+// synopsys translate_on
+
+assign S = \S~output_o ;
+
+assign Cout = \Cout~output_o ;
+
+endmodule
